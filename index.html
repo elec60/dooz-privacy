@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dooz — Privacy Policy</title>
+    <meta name="description" content="What Dooz collects, what it does not, and how to contact the developer.">
+    <meta name="theme-color" content="#100D0B">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <!--
+      A static page beside the game. It is the URL Google Play and the App Store require for the
+      listing, so it must be reachable without the wasm bundle: no script, no shared stylesheet
+      (styles.css hides overflow for the canvas, which would make this page unscrollable). Colours
+      are DoozDarkPalette's own so the two pages read as one site.
+    -->
+    <style>
+        :root { color-scheme: dark; }
+        html, body { margin: 0; padding: 0; background: #100D0B; color: #F3EBE0; }
+        body {
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+            font-size: 17px;
+            line-height: 1.55;
+            background: radial-gradient(circle at 50% 0%, rgba(233, 166, 63, 0.14), transparent 55%), #100D0B;
+        }
+        main { max-width: 720px; margin: 0 auto; padding: 48px 20px 72px; }
+        h1 { font-size: 34px; letter-spacing: 0.02em; margin: 0 0 4px; color: #F7C86D; }
+        h2 { font-size: 21px; margin: 40px 0 10px; color: #E9A63F; }
+        p, li { color: #E4D9CB; }
+        .meta { color: #A8998A; margin-bottom: 32px; }
+        a { color: #F7C86D; }
+        ul { padding-left: 22px; }
+        .card {
+            background: #1B1613; border-radius: 16px; padding: 18px 20px; margin: 20px 0;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+        }
+        .card p:last-child { margin-bottom: 0; }
+        footer { margin-top: 56px; color: #A8998A; font-size: 14px; }
+    </style>
+</head>
+<body>
+<main>
+    <h1>Dooz — Privacy Policy</h1>
+    <p class="meta">Effective 16 September 2026</p>
+
+    <div class="card">
+        <p><strong>The short version.</strong> Dooz has no accounts, no sign-in, no advertising and no
+        analytics. Your settings and your statistics stay on your device. The only data that leaves
+        your device is an anonymous crash report if the app crashes (Android), and the purchase
+        itself if you buy the unlock, which Google handles.</p>
+    </div>
+
+    <h2>Who is responsible</h2>
+    <p>Dooz is developed and published by Mirhashem Mousavi Mehmandousti, an individual developer
+    based in Germany. For anything about this policy or your data, write to
+    <a href="mailto:mirhashem.mousavi.m@gmail.com">mirhashem.mousavi.m@gmail.com</a>. The postal address
+    is shown in the app's store listing.</p>
+
+    <h2>Data that stays on your device</h2>
+    <p>Dooz stores the following locally, in the app's own private storage, and never uploads it:</p>
+    <ul>
+        <li>your preferences — language, theme, board skin, board tilt, sound, and whether the board
+            follows the opponent's move;</li>
+        <li>the player name you chose for local play, if any;</li>
+        <li>your results against the computer — wins, losses, draws, streaks and the last games per
+            level, which drive the Statistics screen;</li>
+        <li>whether the one-time unlock has been purchased, so the app works offline.</li>
+    </ul>
+    <p>You can erase your statistics at any time from the Statistics screen. Uninstalling the app, or
+    clearing its data in your device settings, deletes all of the above.</p>
+
+    <h2>Crash reports (Android)</h2>
+    <p>The Android version uses <strong>Firebase Crashlytics</strong>, a service by Google, to tell us
+    when the app crashes. If Dooz crashes, Crashlytics sends Google a report containing:</p>
+    <ul>
+        <li>the crash's technical stack trace and the name of the screen that was open;</li>
+        <li>your device model, operating system version and the app version;</li>
+        <li>a randomly generated Firebase installation identifier, which is not linked to you, your
+            Google account or any other app;</li>
+        <li>the time of the crash and basic device state such as free memory.</li>
+    </ul>
+    <p>Crash reports contain no name, e-mail address, game record or content you typed. We use them
+    only to find and fix bugs, on the basis of our legitimate interest in keeping the app working
+    (Art. 6(1)(f) GDPR). Google processes this data on our behalf and retains crash data for 90 days.
+    See <a href="https://firebase.google.com/support/privacy">Google's Firebase privacy notice</a>.
+    Crash reporting is not present in the web version and not currently enabled in the iOS version.</p>
+
+    <h2>Purchases</h2>
+    <p>Dooz offers one optional one-time purchase, which unlocks the two harder computer levels and
+    additional board skins. Payment is handled entirely by <strong>Google Play</strong> on Android
+    (and by the App Store on iOS when available). We never see your card or bank details. The app
+    receives from the store only a confirmation that the item was purchased, which it uses to unlock
+    the content and to restore it if you reinstall. Refunds and receipts are managed by the store
+    under its own terms. See <a href="https://policies.google.com/privacy">Google's privacy
+    policy</a>.</p>
+
+    <h2>Local two-player games (Bluetooth and Wi-Fi)</h2>
+    <p>When you play someone nearby, the two phones talk to each other directly. No server is
+    involved and nothing is sent to us. The other player's phone receives your chosen player name
+    (or your device's name if you have not chosen one), the board size and your moves. Dooz uses the
+    Bluetooth permissions only to find and connect to the other phone. On Android 11 and earlier the
+    operating system additionally requires the location permission before any app may scan for
+    Bluetooth devices; Dooz asks for it only for that scan and never reads, stores or sends your
+    location. On Android 12 and later no location permission is involved. The connection ends when
+    either player leaves the game.</p>
+
+    <h2>The web version</h2>
+    <p>The browser version at dooz-a7349.web.app is served by Firebase Hosting. Like any web server,
+    it records standard access logs (your IP address, browser type and the time of the request),
+    which Google keeps for a limited period for security and operation. The web version has no crash
+    reporting, no purchases and no analytics, and stores your preferences only in your browser.</p>
+
+    <h2>Online play</h2>
+    <p>This version of Dooz has no online multiplayer, no accounts and no chat. If a future version
+    adds them, this policy will be updated before those features are released, and the app will
+    tell you what changes.</p>
+
+    <h2>Children</h2>
+    <p>Dooz is a board game suitable for all ages. It does not knowingly collect personal data from
+    anyone, children included, beyond the anonymous crash reports described above.</p>
+
+    <h2>Your rights</h2>
+    <p>Under the GDPR you may ask what data we hold about you, have it corrected or deleted, object to
+    its processing, or complain to a supervisory authority. In practice we hold nothing that
+    identifies you: your game data is on your device under your control, and crash reports cannot be
+    traced back to a person by us. If you still have a question or a request, write to the address
+    above and we will answer within one month.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If the policy changes, the new version is published at this address with a new effective
+    date.</p>
+
+    <footer>Dooz · <a href="https://dooz-a7349.web.app/">Play in the browser</a></footer>
+</main>
+</body>
+</html>

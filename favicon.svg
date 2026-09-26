@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 108 108">
+  <!--
+    The app icon: an X and an O on two diagonally adjacent cells — a real position, not a logo.
+
+    An earlier draft overlapped the two glyphs, which cannot happen in Gomoku: one stone, one cell.
+    Here each sits on its own dark tile with the grid line between them, exactly as the board draws
+    them, and they touch at the corner the way two stones actually contest a diagonal.
+
+    One master, three consumers — the Android adaptive vectors, the iOS 1024 PNG and the web favicon
+    are all this geometry. Colours are the board's own (BoardArt.kt). Everything stays inside the
+    adaptive icon's 72x72 safe zone (18..90), because Android masks the outer ring.
+  -->
+  <defs>
+    <linearGradient id="bronze" x1="0" y1="0" x2="0" y2="108" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6B4E20"/>
+      <stop offset="1" stop-color="#241A0C"/>
+    </linearGradient>
+    <linearGradient id="steel" x1="32" y1="32" x2="52" y2="52" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#767C88"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="56" y1="56" x2="76" y2="76" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F7C86D"/>
+      <stop offset="1" stop-color="#9C5E14"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="108" height="108" fill="url(#bronze)"/>
+
+  <!-- The playfield: khaki, with the grid the two stones sit on. -->
+  <rect x="6" y="6" width="96" height="96" fill="#A9A287"/>
+  <g stroke="#57523E" stroke-width="1.4">
+    <path d="M6 30 H102 M6 54 H102 M6 78 H102 M30 6 V102 M54 6 V102 M78 6 V102"/>
+  </g>
+
+  <!-- X, on its own stone tile. -->
+  <rect x="31" y="31" width="22" height="22" rx="4" fill="#17130E"/>
+  <g stroke="url(#steel)" stroke-width="7" stroke-linecap="round">
+    <path d="M36 36 L48 48 M48 36 L36 48"/>
+  </g>
+
+  <!-- O, on the cell diagonally next to it — the two touch at a corner, as stones do. -->
+  <rect x="55" y="55" width="22" height="22" rx="4" fill="#17130E"/>
+  <circle cx="66" cy="66" r="8" fill="none" stroke="url(#gold)" stroke-width="6"/>
+</svg>
